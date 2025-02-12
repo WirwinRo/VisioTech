@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visiotech.api", "visiotech.api\visiotech.api.csproj", "{4EE762B3-E277-4313-B037-95D9534F3E80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visiotech.application", "visiotech.application\visiotech.application.csproj", "{93F0EA63-7FEA-4F9C-A0EF-191A757D9BF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visiotech.infrastructure", "visiotech.infrastructure\visiotech.infrastructure.csproj", "{CEA1859C-5B98-4687-91CD-0DD6D6A9F03A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visiotech.domain", "visiotech.domain\visiotech.domain.csproj", "{73EFE789-1CBC-4536-A0CC-4B0E352A1759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EE762B3-E277-4313-B037-95D9534F3E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE762B3-E277-4313-B037-95D9534F3E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE762B3-E277-4313-B037-95D9534F3E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE762B3-E277-4313-B037-95D9534F3E80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F0EA63-7FEA-4F9C-A0EF-191A757D9BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F0EA63-7FEA-4F9C-A0EF-191A757D9BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F0EA63-7FEA-4F9C-A0EF-191A757D9BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F0EA63-7FEA-4F9C-A0EF-191A757D9BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA1859C-5B98-4687-91CD-0DD6D6A9F03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA1859C-5B98-4687-91CD-0DD6D6A9F03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA1859C-5B98-4687-91CD-0DD6D6A9F03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA1859C-5B98-4687-91CD-0DD6D6A9F03A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EFE789-1CBC-4536-A0CC-4B0E352A1759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EFE789-1CBC-4536-A0CC-4B0E352A1759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EFE789-1CBC-4536-A0CC-4B0E352A1759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EFE789-1CBC-4536-A0CC-4B0E352A1759}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
