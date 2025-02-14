@@ -11,6 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visiotech.infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "visiotech.domain", "visiotech.domain\visiotech.domain.csproj", "{73EFE789-1CBC-4536-A0CC-4B0E352A1759}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Domain", "1-Domain", "{60A726CB-2C99-43BD-ABF6-1EBCAD330145}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Infrastructure", "2-Infrastructure", "{5FE4B60D-40A9-408F-8F89-46532ED5B379}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Business", "3-Business", "{04468CEC-066D-44DD-A543-794A29AC82E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Api", "4-Api", "{907B521F-CF68-486D-A66C-BD8122CDB17D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +44,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4EE762B3-E277-4313-B037-95D9534F3E80} = {907B521F-CF68-486D-A66C-BD8122CDB17D}
+		{93F0EA63-7FEA-4F9C-A0EF-191A757D9BF8} = {04468CEC-066D-44DD-A543-794A29AC82E0}
+		{CEA1859C-5B98-4687-91CD-0DD6D6A9F03A} = {5FE4B60D-40A9-408F-8F89-46532ED5B379}
+		{73EFE789-1CBC-4536-A0CC-4B0E352A1759} = {60A726CB-2C99-43BD-ABF6-1EBCAD330145}
 	EndGlobalSection
 EndGlobal
