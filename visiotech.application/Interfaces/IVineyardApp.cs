@@ -9,5 +9,6 @@ namespace visiotech.application.Interfaces
 {
     public interface IVineyardApp : ICommonApp<VineyardDto>
     {
+        Task<Dictionary<string, List<string>>> GetVineyardManager();
     }
 }

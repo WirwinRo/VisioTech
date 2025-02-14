@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using System;
 using visiotech.api.Extensions;
 using visiotech.infrastructure.Config;
 
@@ -39,7 +40,7 @@ builder.Services.AddSwaggerGen(opt =>
 //DbContext
 builder.Services.AddDbContext<VisioTechContext>(opt =>
 {
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("Database"));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("conexion"));
 });
 
 // Registrar la fábrica de DbContext
@@ -67,6 +68,13 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+// Crear o migrar la base de datos automáticamente
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<VisioTechContext>();
+    dbContext.Database.EnsureCreated(); // Crea la base de datos si no existe
+}
 
 app.MapControllers();
 

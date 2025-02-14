@@ -9,5 +9,6 @@ namespace visiotech.application.Interfaces
 {
     public interface IManagerApp : ICommonApp<ManagerDto>
     {
+        Task<Dictionary<String, int>> GetManagerArea();
     }
 }

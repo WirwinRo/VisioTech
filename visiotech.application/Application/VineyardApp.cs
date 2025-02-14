@@ -63,5 +63,9 @@ namespace visiotech.application.Application
             return _mapper.Map<List<VineyardDto>>(iDataList);
         }
 
+        public async Task<Dictionary<string, List<string>>> GetVineyardManager()
+        {
+            return await _vineyard.GetVineyardManager();
+        }
     }
 }

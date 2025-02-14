@@ -8,6 +8,10 @@
 
   <ItemGroup>
     <None Remove="Entities\Vineyards.cs~RFae241cc.TMP" />
+    <None Remove="Interfaces\IGrapeRepository.cs~RF24a511b.TMP" />
+    <None Remove="Interfaces\IManagerRepository.cs~RF25c115b.TMP" />
+    <None Remove="Interfaces\IVineyardRepository.cs~RF26834c7.TMP" />
+    <None Remove="Interfaces\IVineyardRepository.cs~RF2756d1e.TMP" />
     <None Remove="Interfaces\IVineyardRepository.cs~RFb6fc1d.TMP" />
   </ItemGroup>
 

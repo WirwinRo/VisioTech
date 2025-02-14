@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Remove="Interfaces\IManagerApp.cs~RF1a546ec.TMP" />
+    <None Remove="Interfaces\IVineyardApp.cs~RF276a3f8.TMP" />
   </ItemGroup>
 
   <ItemGroup>

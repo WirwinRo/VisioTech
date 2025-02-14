@@ -63,5 +63,10 @@ namespace visiotech.application.Application
             var iDataList = await _manager.List();
             return _mapper.Map<List<ManagerDto>>(iDataList);
         }
+
+        public async Task<Dictionary<string, int>> GetManagerArea()
+        {
+            return await _manager.GetManagerArea();
+        }
     }
 }

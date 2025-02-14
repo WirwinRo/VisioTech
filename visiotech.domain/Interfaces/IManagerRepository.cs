@@ -9,5 +9,6 @@ namespace visiotech.domain.Interfaces
 {
     public interface IManagerRepository : ICommonRepository<Manager>
     {
+        Task<Dictionary<String, int>> GetManagerArea();
     }
 }

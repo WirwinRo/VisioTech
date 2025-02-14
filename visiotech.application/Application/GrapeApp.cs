@@ -66,6 +66,9 @@ namespace visiotech.application.Application
             return _mapper.Map<List<GrapeDto>>(iDataList);
         }
 
-
+        public async Task<Dictionary<string, int>> GetGrapeByArea()
+        {
+            return await _grape.GetGrapeByArea();
+        }
     }
 }

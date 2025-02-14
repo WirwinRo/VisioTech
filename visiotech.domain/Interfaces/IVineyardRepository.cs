@@ -9,5 +9,6 @@ namespace visiotech.domain.Interfaces
 {
     public interface IVineyardRepository : ICommonRepository<Vineyard>
     {
+        Task<Dictionary<String, List<string>>> GetVineyardManager();
     }
 }

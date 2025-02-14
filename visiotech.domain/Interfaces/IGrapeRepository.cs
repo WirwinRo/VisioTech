@@ -9,5 +9,6 @@ namespace visiotech.domain.Interfaces
 {
     public interface IGrapeRepository : ICommonRepository<Grape>
     {
+        Task<Dictionary<String, int>> GetGrapeByArea();
     }
 }

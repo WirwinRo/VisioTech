@@ -16,6 +16,7 @@ namespace visiotech.api.Extensions
             services.AddScoped<IParcelRepository, ParcelRepository>();
             services.AddScoped<IParcelApp, ParcelApp>();
             services.AddScoped<IVineyardRepository, VineyardRepository>();
+            services.AddScoped<IVineyardApp, VineyardApp>();
 
         }
     }

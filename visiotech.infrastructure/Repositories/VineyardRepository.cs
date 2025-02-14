@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,25 @@ namespace visiotech.infrastructure.Repositories
         public VineyardRepository(DbContextFactory contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
+        }
+
+        private VisioTechContext CreateContext() => _contextFactory.CreateDbContext();
+        public async Task<Dictionary<string, List<string>>> GetVineyardManager()
+        {
+            var ctx = CreateContext();
+            var vineyardManagers = await ctx.parcel
+                .Include(a => a.Vineyard)
+                .Include(a => a.Manager)
+                .GroupBy(g => g.Vineyard.Name)
+                .Select(d => new
+                {
+                    VineyardName = d.Key,
+                    ManagerNames = d.Where(m => m.Manager != null)
+                    .Select(m => m.Manager.Name).Distinct() //obtenemos los nombres de los managers el distinct evita duplicados
+                    .OrderBy(name => name).ToList() //ordenamos los nombres de los managers
+                }).ToListAsync();
+
+            return vineyardManagers.ToDictionary(v => v.VineyardName, v => v.ManagerNames);
         }
     }
 }

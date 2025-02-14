@@ -9,5 +9,6 @@ namespace visiotech.application.Interfaces
 {
     public interface IGrapeApp : ICommonApp<GrapeDto>
     {
+        Task<Dictionary<String, int>> GetGrapeByArea();
     }
 }
