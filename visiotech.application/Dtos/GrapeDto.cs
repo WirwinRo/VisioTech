@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace visiotech.api.Dtos
+namespace visiotech.application.Dtos
 {
-    public class ManagerDto
+    public class GrapeDto
     {
-        public int ManagerID { get; set; }
-        public string TaxNumber { get; set; }
+        public int GrapeID { get; set; }
         public string Name { get; set; }
 
         public ICollection<ParcelDto> Parcels { get; set; } = new List<ParcelDto>();
+
     }
 }

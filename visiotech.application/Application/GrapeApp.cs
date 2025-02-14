@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using visiotech.api.Dtos;
+using visiotech.application.Dtos;
 using visiotech.application.Interfaces;
 using visiotech.domain.Entities;
 using visiotech.domain.Interfaces;

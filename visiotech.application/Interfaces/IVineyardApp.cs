@@ -7,7 +7,7 @@ using visiotech.application.Dtos;
 
 namespace visiotech.application.Interfaces
 {
-    public interface IGrapeApp : ICommonApp<GrapeDto>
+    public interface IVineyardApp : ICommonApp<VineyardDto>
     {
     }
 }

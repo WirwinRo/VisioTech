@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using visiotech.api.Dtos;
+using visiotech.application.Dtos;
 using visiotech.domain.Entities;
 
 namespace visiotech.api.Extensions
