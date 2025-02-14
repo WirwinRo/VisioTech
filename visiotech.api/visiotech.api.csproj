@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="appsettings.Development.json~RF368054.TMP" />
-    <None Remove="Extensions\EntityNotFoundException.cs~RF956aea.TMP" />
-    <None Remove="Extensions\lyzjddex.usj~" />
+    <None Remove="Extensions\ServiceExtensions.cs~RF150ed7a.TMP" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\visiotech.infrastructure\visiotech.infrastructure.csproj" />
+    <ProjectReference Include="..\visiotech.application\visiotech.application.csproj" />
   </ItemGroup>
 
 </Project>

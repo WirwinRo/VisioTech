@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using visiotech.api.Extensions;
 using visiotech.infrastructure.Config;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,9 @@ builder.Services.AddDbContext<VisioTechContext>(opt =>
 builder.Services.AddScoped<DbContextFactory>();
 
 builder.Services.AddAutoMapper(typeof(Program));
+
+//Inyecvción de dependencias
+builder.Services.AddInjectiionRepositories();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
