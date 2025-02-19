@@ -4,17 +4,22 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>fc5ae1c1-af17-4634-a49d-4b543d166f48</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Controllers\ManagersController.cs~RF1f70754.TMP" />
     <None Remove="Controllers\tix1yew0.icb~" />
     <None Remove="Controllers\VineyardsController.cs~RF265e9ae.TMP" />
+    <None Remove="Dockerfile~RFecd43a2.TMP" />
+    <None Remove="xdh1rmqb.s2i~" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 

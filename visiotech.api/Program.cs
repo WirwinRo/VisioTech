@@ -7,6 +7,8 @@ using visiotech.infrastructure.Config;
 
 var builder = WebApplication.CreateBuilder(args);
 
+string connectionString = Environment.GetEnvironmentVariable("db_connection_String") ?? builder.Configuration.GetConnectionString("conexion");
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opt =>
 {
@@ -40,7 +42,7 @@ builder.Services.AddSwaggerGen(opt =>
 //DbContext
 builder.Services.AddDbContext<VisioTechContext>(opt =>
 {
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("conexion"));
+    opt.UseSqlServer(connectionString);
 });
 
 // Registrar la fábrica de DbContext
