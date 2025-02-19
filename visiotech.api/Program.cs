@@ -8,6 +8,8 @@ using visiotech.infrastructure.Config;
 var builder = WebApplication.CreateBuilder(args);
 
 string connectionString = Environment.GetEnvironmentVariable("db_connection_String") ?? builder.Configuration.GetConnectionString("conexion");
+///CORS
+builder.Services.AddCors(options => { options.AddPolicy("AllowAll", policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); });
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opt =>
@@ -68,6 +70,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
